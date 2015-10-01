@@ -12,16 +12,19 @@ public class GuessANumber {
 	if (guess == computerNum){
 		System.out.println("BINGO !!!");
 	}
-		else if (guess < computerNum) {
+		else{ while (guess != computerNum){
+		if (guess < computerNum) {
 			System.out.println("Your guess is too small");
 			
 		}
 		else if (guess > computerNum) {
 			System.out.println("Your guess it too big");
+				}
+		System.out.println("Guess again :");
+		guess = input.nextInt();}
 		}
-	
 	System.out.println("Random number is :"+ computerNum);
 	}
 	
-
 }
+
